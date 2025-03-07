@@ -8,7 +8,7 @@ const initTables = async () => {
     
     await createUsersTable();
     await user_sessions_table();
-    await users_profile_table();
+    // await users_profile_table();
     
     console.log("✅ All tables initialized successfully.");
   } catch (error) {

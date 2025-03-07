@@ -5,7 +5,8 @@ const users_profile_table = async () => {
     CREATE TABLE IF NOT EXISTS user_profiles (
         id         BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         user_id    BIGINT UNSIGNED NOT NULL UNIQUE, -- Links to users table (1-to-1)
-        full_name  VARCHAR(100), -- Publicly displayed name
+        FirstName  VARCHAR(100), -- Publicly displayed name
+        LastName VARCHAR(100)
         bio        TEXT, -- User bio
         avatar_url VARCHAR(255), -- Profile picture URL
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
